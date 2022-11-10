@@ -1,5 +1,5 @@
-//Largest Number At Least Twice of Others solution in Golang
-//https://leetcode.com/explore/learn/card/array-and-string/201/introduction-to-array/1147/
+//747. Largest Number At Least Twice of Others solution in Golang
+//https://leetcode.com/problems/largest-number-at-least-twice-of-others/description/
 
 package leetcode
 
