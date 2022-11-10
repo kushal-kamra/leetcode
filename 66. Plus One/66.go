@@ -15,11 +15,8 @@ func plusOne(digits []int) []int {
         }
     }
 
-    var new_digit []int
-    new_digit = append(new_digit, 1)
-    for i := 0; i < len; i++ {
-        new_digit = append(new_digit, digits[i])
-    }
-    
-    return new_digit
+    var new_digits = make([]int, len+1)
+    new_digits[0] = 1
+
+    return new_digits
 }
