@@ -1,5 +1,6 @@
 // 61. Rotate List solution in Java
 // https://leetcode.com/problems/rotate-list/description/
+
 /**
  * Definition for singly-linked list.
  * public class ListNode {

@@ -1,3 +1,6 @@
+// 61. Rotate List solution in GoLang
+// https://leetcode.com/problems/rotate-list/description/
+
 /**
  * Definition for singly-linked list.
  * type ListNode struct {
