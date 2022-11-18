@@ -1,2 +1,2 @@
 # leetcode
-Leetcode solutions in Node.js, Go and Java
+Leetcode solutions in JavaScript, GoLang and Java
