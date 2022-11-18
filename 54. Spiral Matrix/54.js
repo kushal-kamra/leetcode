@@ -32,7 +32,7 @@
         }
         //To top
         if (left != right) {
-            for (let row = down -1; row > up; row--) {
+            for (let row = down - 1; row > up; row--) {
                 result.push(matrix[row][left]);
             }
         }
