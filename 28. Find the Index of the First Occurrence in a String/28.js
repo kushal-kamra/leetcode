@@ -12,7 +12,7 @@
     if (haystack.length == 0) return -1;
 
     for (let i = 0; i <= haystack.length - needle.length; i++) {
-        if (haystack.length - i < needle.length) return -2;
+        if (haystack.length - i < needle.length) return -1;
 
         if (haystack[i] == needle[0]) {
             for (let j = 0; j < needle.length; j++) {
