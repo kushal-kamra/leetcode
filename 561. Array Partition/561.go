@@ -3,6 +3,8 @@
 
 package leetcode
 
+import "sort"
+
 func arrayPairSum(nums []int) int {
     sort.Ints(nums)
 
