@@ -3,14 +3,13 @@
 
 package leetcode
 
-/**
- * Definition for a binary tree node.
- * type TreeNode struct {
- *     Val int
- *     Left *TreeNode
- *     Right *TreeNode
- * }
- */
+
+ // Definition for a binary tree node.
+type TreeNode struct {
+	Val int
+ 	Left *TreeNode
+ 	Right *TreeNode
+}
 
  // Stack Implementation from below
  // https://github.com/golang-collections/collections/blob/master/stack/stack.go
