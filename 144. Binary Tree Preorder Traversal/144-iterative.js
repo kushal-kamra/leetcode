@@ -1,4 +1,4 @@
-// 144. Binary Tree Preorder Traversal solution in JavaScript
+// 144. Binary Tree Preorder Traversal iterative solution in JavaScript
 // https://leetcode.com/problems/binary-tree-preorder-traversal/description/
 
 /**
