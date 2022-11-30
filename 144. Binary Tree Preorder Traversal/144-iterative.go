@@ -1,8 +1,7 @@
-// 144. Binary Tree Preorder Traversal solution in GoLang
+// 144. Binary Tree Preorder Traversal iterative solution in GoLang
 // https://leetcode.com/problems/binary-tree-preorder-traversal/description/
 
 package leetcode
-
 
  // Definition for a binary tree node.
 type TreeNode struct {
