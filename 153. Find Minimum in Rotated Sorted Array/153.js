@@ -1,4 +1,4 @@
-// 153. Find Minimum in Rotated Sorted Array
+// 153. Find Minimum in Rotated Sorted Array solution in JavaScript
 // https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/description/
 
 /**
