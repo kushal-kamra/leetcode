@@ -21,5 +21,5 @@ var search = function(nums, target) {
         }
     }
 
-    return nums[low] == target ? low : -1;
+    return -1;
 };
