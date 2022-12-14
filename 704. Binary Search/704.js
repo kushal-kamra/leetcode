@@ -12,8 +12,6 @@ var search = function(nums, target) {
     while (low < high) {
         let mid = low + Math.floor((high - low) / 2);
 
-        console.log('mid : ', mid);
-
         if (target == nums[mid]) {
             return mid;
         } else if (target < nums[mid]) {
