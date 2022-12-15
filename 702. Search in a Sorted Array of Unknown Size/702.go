@@ -1,4 +1,4 @@
-// 702. Search in a Sorted Array of Unknown Size sokution in GoLang
+// 702. Search in a Sorted Array of Unknown Size solution in GoLang
 // https://leetcode.com/problems/search-in-a-sorted-array-of-unknown-size/description/
 
 /**
