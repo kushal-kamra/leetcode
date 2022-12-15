@@ -10,6 +10,8 @@
  * func (this *ArrayReader) get(index int) int {}
  */
 
+ package leetcode
+
  func search(reader ArrayReader, target int) int {
     if reader.get(0) == target {
         return 0
