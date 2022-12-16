@@ -7,9 +7,7 @@
  * @return {character}
  */
 var nextGreatestLetter = function(letters, target) {
-    if (letters[letters.length - 1] < target) return letters[0];
-
-    if (letters.length == 1) return letters[0];
+    if (letters[letters.length - 1] < target || letters.length == 1) return letters[0];
 
     let left = 0;
     let right = letters.length;
