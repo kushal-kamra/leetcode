@@ -20,7 +20,7 @@ var firstMissingPositive = function(nums) {
 
     if (contains_1 == 0) return 1;
 
-    // marking all o, -ve and greater than n as 1
+    // marking all 0, -ve and greater than n as 1
     for (let i = 0; i < len; i++) {
         if (nums[i] <= 0 || nums[i] > len) nums[i] = 1;
     }
