@@ -6,6 +6,7 @@ package leetcode
 func firstMissingPositive(nums []int) int {
     len := len(nums)
 
+	//checking for existence of 1
     contains_1 := 0
     
     for i := 0; i < len; i++ {
@@ -19,6 +20,7 @@ func firstMissingPositive(nums []int) int {
         return 1
     }
 
+	// marking all 0, -ve and greater than n as 1
     for i := 0; i < len; i++ {
         if nums[i] <= 0 || nums[i] > len {
             nums[i] = 1
@@ -35,6 +37,7 @@ func firstMissingPositive(nums []int) int {
         }
     }
 
+	//checking array for positive number
     for i := 1; i < len; i++ {
         if nums[i] > 0 {
             return i
