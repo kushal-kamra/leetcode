@@ -31,8 +31,6 @@
         for left < right {
             mid := left + (right - left) / 2
 
-            fmt.Println("mid : ", mid)
-
             if binaryMatrix.Get(row, mid) == 0 {
                 left = mid + 1
             } else {
