@@ -31,14 +31,14 @@ var nearestPalindromic = function(n) {
     let smaller_string = toPalindromeDigits(root_num - 1, is_even);
     let diff_smaller = Math.abs(number - parseInt(smaller_string));
 
-    let closest = diff_bigger < diff_smaller ? parseInt(bigger_string) : parseInt(smaller_string);
+    let closest = diff_bigger < diff_smaller ? BigInt(bigger_string) : BigInt(smaller_string);
     let min_diff = Math.min(diff_bigger, diff_smaller);
 
     if (diff_equal != 0) {
         if (diff_equal == min_diff) {
-            closest = Math.min(parseInt(equal_string), closest);
+            closest = equal_string < closest ? BigInt(equal_string) : BigInt(closest);
         } else if (diff_equal < min_diff) {
-            closest = parseInt(equal_string);
+            closest = BigInt(equal_string);
         }
     }
 
