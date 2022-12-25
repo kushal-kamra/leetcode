@@ -1,5 +1,6 @@
 // 564. Find the Closest Palindrome solution in JavaScript
 // https://leetcode.com/problems/find-the-closest-palindrome/description/
+// Inspired by https://leetcode.com/problems/find-the-closest-palindrome/solutions/2019506/simple-javascript-solution/?orderBy=most_votes&languageTags=javascript
 
 /**
  * @param {string} n
