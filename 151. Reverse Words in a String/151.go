@@ -21,10 +21,10 @@ func reverseWords(s string) string {
     }
     
     if len(word) > 0 && len(result) > 0 {
-                result = word + " " + result;
-            } else if len(word) > 0 {
-                result = word;
-            }
+		result = word + " " + result;
+	} else if len(word) > 0 {
+		result = word;
+	}
 
     return result
 }
