@@ -13,7 +13,7 @@ func maxProfit(prices []int) int {
 	right_max := prices[len-1]
 
 	left_profits := make([]int, len)
-	right_profits := make([]int, len+1)
+	right_profits := make([]int, len + 1)
 
 	for i := 1; i < len; i++ {
 		left_profits[i] = Max(left_profits[i-1], prices[i]-left_min)
