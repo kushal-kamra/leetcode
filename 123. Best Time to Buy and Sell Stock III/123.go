@@ -21,14 +21,14 @@ func maxProfit(prices []int) int {
 
 		right_index := len - 1 - i
 
-		right_profits[right_index] = Max(right_profits[right_index+1], right_max-prices[right_index])
+		right_profits[right_index] = Max(right_profits[right_index + 1], right_max - prices[right_index])
 		right_max = Max(right_max, prices[right_index])
 	}
 
 	max_profit := 0
 
 	for i := 0; i < len; i++ {
-		max_profit = Max(max_profit, left_profits[i]+right_profits[i+1])
+		max_profit = Max(max_profit, left_profits[i] + right_profits[i + 1])
 	}
 
 	return max_profit
