@@ -10,14 +10,16 @@
  * }
  */
 
-package leetcode
+package main
+
+import "math"
 
 func closestValue(root *TreeNode, target float64) int {
 
 	closest := root.Val
 
 	for root != nil {
-		if math.Abs(float64(root.Val) - target) < math.Abs(float64(closest) - target) {
+		if math.Abs(float64(root.Val)-target) < math.Abs(float64(closest)-target) {
 			closest = root.Val
 		}
 

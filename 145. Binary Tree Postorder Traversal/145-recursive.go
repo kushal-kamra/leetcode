@@ -10,25 +10,25 @@
  * }
  */
 
-package leetcode
+package main
 
- func postorderTraversal(root *TreeNode) []int {
-    if root == nil {
-        return nil
-    }
+func postorderTraversal(root *TreeNode) []int {
+	if root == nil {
+		return nil
+	}
 
-    var output []int
-    traverse(root, &output)
+	var output []int
+	traverse(root, &output)
 
-    return output
+	return output
 }
 
 func traverse(root *TreeNode, output *[]int) {
-    if root == nil {
-        return
-    }
+	if root == nil {
+		return
+	}
 
-    traverse(root.Left, output)
-    traverse(root.Right, output)
-    *output = append(*output, root.Val)
+	traverse(root.Left, output)
+	traverse(root.Right, output)
+	*output = append(*output, root.Val)
 }

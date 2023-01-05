@@ -1,17 +1,17 @@
 // 144. Binary Tree Preorder Traversal recursive solution in GoLang
 // https://leetcode.com/problems/binary-tree-preorder-traversal/description/
 
-package leetcode 
+package main
 
 // Definition for a binary tree node.
- type TreeNode struct {
-	Val int
- 	Left *TreeNode
- 	Right *TreeNode
+type TreeNode struct {
+	Val   int
+	Left  *TreeNode
+	Right *TreeNode
 }
 
- func preorderTraversal(root *TreeNode) []int {
-    if root == nil {
+func preorderTraversal(root *TreeNode) []int {
+	if root == nil {
 		return nil
 	}
 

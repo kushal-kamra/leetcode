@@ -1,67 +1,62 @@
 // 208. Implement Trie (Prefix Tree) solution in GoLang
 // https://leetcode.com/problems/implement-trie-prefix-tree/description/
 
-package leetcode
+package main
 
 type Trie struct {
-    children [26]*Trie
-    isEnd bool
+	children [26]*Trie
+	isEnd    bool
 }
-
 
 func Constructor() Trie {
-    return Trie{}
+	return Trie{}
 }
 
+func (this *Trie) Insert(word string) {
+	currNode := this
 
-func (this *Trie) Insert(word string)  {
-    currNode := this
+	for _, char := range word {
+		idx := char - 'a'
 
-    for _, char := range word {
-        idx := char - 'a'
+		if currNode.children[idx] == nil {
+			currNode.children[idx] = &Trie{}
+		}
 
-        if currNode.children[idx] == nil {
-            currNode.children[idx] = &Trie{}
-        }
+		currNode = currNode.children[idx]
+	}
 
-        currNode = currNode.children[idx]
-    }
-
-    currNode.isEnd = true
+	currNode.isEnd = true
 }
-
 
 func (this *Trie) Search(word string) bool {
-    currNode := this
+	currNode := this
 
-    for _, char := range word {
-        idx := char - 'a'
+	for _, char := range word {
+		idx := char - 'a'
 
-        if currNode.children[idx] == nil {
-            return false
-        }
+		if currNode.children[idx] == nil {
+			return false
+		}
 
-        currNode = currNode.children[idx]
-    }
-    return currNode.isEnd
+		currNode = currNode.children[idx]
+	}
+	return currNode.isEnd
 }
-
 
 func (this *Trie) StartsWith(prefix string) bool {
-    currNode := this
+	currNode := this
 
-    for _, char := range prefix {
-        idx := char - 'a'
+	for _, char := range prefix {
+		idx := char - 'a'
 
-        if currNode.children[idx] == nil {
-            return false
-        }
+		if currNode.children[idx] == nil {
+			return false
+		}
 
-        currNode = currNode.children[idx]
-    }
-    return true
+		currNode = currNode.children[idx]
+	}
+	return true
 }
-
 
 /**
  * Your Trie object will be instantiated and called as such:
