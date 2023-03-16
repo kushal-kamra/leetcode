@@ -1,4 +1,4 @@
-//  88. Merge Sorted Array solution in Java
+// 88. Merge Sorted Array solution in Java
 // https://leetcode.com/problems/merge-sorted-array/description/
 
 class Solution {
