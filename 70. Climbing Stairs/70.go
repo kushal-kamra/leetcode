@@ -1,6 +1,8 @@
 // 70. Climbing Stairs solution in Golang
 // https://leetcode.com/problems/climbing-stairs/description/
 
+package main
+
 func climbStairs(n int) int {
     if n == 1 {
         return 1;
