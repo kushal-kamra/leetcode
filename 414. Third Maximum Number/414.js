@@ -1,21 +1,24 @@
-// 414. Third Maximum Number solution in Java
+// 414. Third Maximum Number solution in JavaScript
 // https://leetcode.com/problems/third-maximum-number/description/
 
-class Solution {
-    public int thirdMax(int[] nums) {
-        Set<Integer> maximums = new HashSet<Integer>();
-        
-        for (int num : nums) {
-            maximums.add(num);
-            if (maximums.size() > 3) {
-                maximums.remove(Collections.min(maximums));
-            }
+/**
+ * @param {number[]} nums
+ * @return {number}
+ */
+var thirdMax = function(nums) {
+    let max_set = new Set();
+
+    nums.forEach((num) => {
+        max_set.add(num);
+
+        if (max_set.size > 3) {
+            max_set.delete(Math.min(...max_set));
         }
-        
-        if (maximums.size() == 3) {
-            return Collections.min(maximums);
-        }
-        
-        return Collections.max(maximums);
+    });
+
+    if (max_set.size == 3) {
+        return Math.min(...max_set);
     }
-}
+    
+    return Math.max(...max_set);
+};
